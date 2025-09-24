@@ -15,5 +15,10 @@ public class OrderController {
     public String getOrder(@PathVariable("orderId") String orderId) {
         return orderService.getOrder(orderId);
     }
+
+    @GetMapping("/order")
+    public String getOrder() {
+        return "OrderDetail";
+    }
 }
 
